@@ -35,8 +35,8 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" id="email" placeholder="Email" />
-                <input type="password" id="password" placeholder="Password" />
+                <input type="email" id="email1" placeholder="Email" />
+                <input type="password" id="password1" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
                 <button type="submit" id="sign_In">Sign In</button>
             </form>
@@ -114,8 +114,8 @@
     });
 
     sign_In.addEventListener('click', (e) => {
-        var email=document.getElementById('email').value;
-        var password=document.getElementById('password').value;
+        var email=document.getElementById('email1').value;
+        var password=document.getElementById('password1').value;
 
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredentials) => {
